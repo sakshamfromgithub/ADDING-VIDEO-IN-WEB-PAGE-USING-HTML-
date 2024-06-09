@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Border Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="laptop">
+        <div class="laptop-screen">
+            <video controls class="video"loop>
+                <source src="km_Template 20240412-2_720p_24f_20240419_131127.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="laptop-bottom"></div>
+    </div>
+</body>
+</html>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.laptop {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.laptop-screen {
+    background: linear-gradient(to bottom, #333 0%, #666 100%);
+    border: 16px solid #333;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.laptop-bottom {
+    height: 40px;
+    background: linear-gradient(to bottom, #666 0%, #333 100%);
+    border-radius: 0 0 20px 20px;
+    margin: 0 16px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.laptop-bottom:before {
+    content: "";
+    width: 80px;
+    height: 10px;
+    background: #333;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+}
+
+</style>
